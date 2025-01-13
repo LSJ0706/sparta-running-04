@@ -8,7 +8,10 @@
  * @param {Array} todos
  * @returns {Array}
  */
-function getIncompleteTodos(todos) {}
+function getIncompleteTodos(todos) {
+  const newTodos = todos.filter((v) => v.completed === false);
+  return newTodos;
+}
 
 // export 수정 불가
 export { getIncompleteTodos };
